@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>السيميوطيقا وعلم العلامات في السينوغرافيا</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Reem+Kufi:wght@500;700&display=swap">
+<style>
+:root{--bg:#1a0f14;--velvet:#5b1a2b;--brass:#d2a85a;--text:#efe6d6;--mut:#b9a99a;--card:#26161d;--line:#d2a85a55;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3ebdd;--text:#2a1a1f;--mut:#6b5560;--card:#fbf6ec;--brass:#8c6420;--line:#8c642055}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Amiri,"Traditional Arabic",serif;font-size:1.2rem;line-height:2}
+h1,h2,h3,.k{font-family:"Reem Kufi",Tahoma,sans-serif;font-weight:700}
+.curtain{position:fixed;inset:0;z-index:20;display:flex;pointer-events:none}
+.curtain i{flex:1;background:repeating-linear-gradient(90deg,#4a1322 0 28px,#6e2236 28px 56px);animation:open 2.2s .5s cubic-bezier(.7,0,.3,1) forwards}
+.curtain i:first-child{transform-origin:right}.curtain i:last-child{transform-origin:left}
+@keyframes open{to{transform:scaleX(0)}}
+.hero{min-height:100vh;min-height:100svh;display:grid;place-items:center;text-align:center;padding:2rem 1.2rem;position:relative;overflow:hidden;background:radial-gradient(circle 260px at var(--x,50%) var(--y,35%),#ffe9b855,transparent 70%),linear-gradient(#2a1018,var(--bg))}
+.hero h1{font-size:clamp(2rem,7vw,4.4rem);line-height:1.35;margin:.4rem 0;color:var(--brass);text-shadow:0 0 30px #d2a85a66}
+.hero p{color:var(--mut);margin:.2rem}
+.hero .by{margin-top:1.6rem;color:var(--text)}
+.hero svg{width:min(260px,60vw);height:auto}
+.hero .tri path{stroke-dasharray:400;stroke-dashoffset:400;animation:draw 3s 1.6s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+main{max-width:46rem;margin:0 auto;padding:3rem 1.2rem}
+section{margin:0 0 3.5rem}
+h2{font-size:1.9rem;color:var(--brass);border-right:4px solid var(--brass);padding-right:.9rem;margin:0 0 1rem}
+h3{font-size:1.35rem;margin:.2rem 0 .4rem}
+p{margin:.2rem 0 1rem}
+.c{font-size:.8rem;color:var(--brass);white-space:nowrap}
+.intro{font-size:1.35rem;color:var(--mut);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1rem 0}
+.tri3{display:grid;gap:1.2rem}
+.sign{background:var(--card);border:1px solid var(--line);border-radius:6px 28px 6px 28px;padding:1.2rem 1.4rem}
+.sign header{display:flex;align-items:center;gap:1rem}
+.sign svg{width:64px;height:64px;flex:none;fill:none;stroke:var(--brass);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.sign .k{color:var(--mut);margin:0;font-size:.95rem}
+.stage{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1rem}
+.stage svg{width:100%;height:auto;display:block}
+.hs{cursor:pointer;outline:none}
+.hs *{transition:opacity .3s,stroke .3s}
+.stage svg:has(.on) .hs:not(.on){opacity:.3}
+.hs.on *{stroke:#ffe9b8}
+.hs:focus-visible{outline:2px solid var(--brass)}
+#cap{min-height:4.5rem;margin:.8rem 0 0;color:var(--text);transition:opacity .3s}
+.tip{color:var(--mut);font-size:1rem}
+.cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:1rem 0}
+.cmp div{background:var(--velvet);color:#efe6d6;text-align:center;padding:.7rem .4rem;border-radius:4px;font-size:1rem;line-height:1.6}
+.cmp b{display:block;color:#ffd98e;font-family:"Reem Kufi",sans-serif}
+ol{padding:0;list-style:none}
+li{padding:.5rem 0;border-bottom:1px dashed var(--line);font-size:1.05rem;line-height:1.8}
+li a{color:var(--brass)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+@media (max-width:520px){.cmp{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.curtain{display:none}.hero .tri path{animation:none;stroke-dashoffset:0}.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="curtain" aria-hidden="true"><i></i><i></i></div>
+
+<header class="hero" id="hero">
+<div>
+<svg class="tri" viewBox="0 0 120 110" fill="none" stroke="#d2a85a" stroke-width="2" aria-hidden="true"><path d="M60 8 L112 100 H8 Z"/><path d="M60 8 L60 100 M34 54 H86" opacity=".5"/><circle cx="60" cy="8" r="4" fill="#d2a85a"/><circle cx="8" cy="100" r="4" fill="#d2a85a"/><circle cx="112" cy="100" r="4" fill="#d2a85a"/></svg>
+<h1>السيميوطيقا وعلم العلامات<br>في السينوغرافيا</h1>
+<p>أيقونة · مؤشر · رمز</p>
+<p class="by">إعداد: ناردين مسعود<br>كلية الفنون الجميلة</p>
+</div>
+</header>
+
+<main>
+<section class="rv">
+<h2>مقدمة</h2>
+<p class="intro">تتكون الصورة المسرحية من عناصر مرئية ومسموعة تسهم في توصيل المعنى. وتساعد السيميوطيقا على فهم دلالات الديكور والأزياء والإضاءة والحركة، وكيف يفسرها المشاهد في سياق العرض.</p>
+</section>
+
+<section class="rv">
+<h2>أولًا: السيميوطيقا وعلم العلامات</h2>
+<p>السيميوطيقا، أو السيميائيات، هي علم دراسة العلامات وكيفية إنتاج المعنى وتفسيره. وتشمل الكلمات والصور والأصوات والإيماءات والأشياء عندما تدل على غيرها. ولذلك فإن «علم العلامات» تسمية شارحة للسيميوطيقا، وليسا علمين منفصلين. ويُستخدم أيضًا مصطلح السيميولوجيا. <span class="c">[1]</span></p>
+<p>عند سوسير تتكون العلامة اللغوية من الدال، وهو الصورة السمعية للكلمة، والمدلول، وهو مفهومها. أما بيرس فيربط بين حامل العلامة وموضوعها والمؤول، أي الفهم الذي تولده. ويقسم العلامات، بحسب علاقتها بموضوعها، إلى أيقونة ومؤشر ورمز. <span class="c">[1، 2]</span></p>
+<p>فمثلًا، تستدعي كلمة «باب» مفهوم الباب في ذهن السامع، بينما قد يوحي باب مغلق في مشهد مسرحي بالمنع إذا دعمت الأحداث ذلك. فمعنى العنصر يتكون من علاقته بالسياق وخبرة المتلقي، ولا ينتج عن شكله وحده.</p>
+</section>
+
+<section class="rv">
+<h2>ثانيًا: مكونات العمل الفني وأنماط تمثيله</h2>
+<p>العناصر التشكيلية الأساسية هي: الخط، والشكل، والحجم، والفراغ، واللون، والملمس. وتُدرس القيمة الضوئية، أي الفاتح والداكن، ضمن خصائص اللون. وتُنظم هذه العناصر بمبادئ مثل الاتزان، والسيادة، والإيقاع، والنسبة، والوحدة، والتنوع. فاللون عنصر، بينما الاتزان طريقة لتنظيم العناصر. <span class="c">[3، 4]</span></p>
+<p>الخط يحدد الاتجاه ويقود العين، والشكل مساحة ثنائية الأبعاد، أما الحجم فله طول وعرض وعمق. والفراغ هو الحيز المحيط بالكتل وبينها، واللون يسهم في تمييزها، بينما يصف الملمس سطحها، كالخشونة والنعومة. وتؤثر علاقات هذه العناصر في الصورة الكلية؛ فترك مساحة واسعة حول ممثل قد يساعد، في مشهد معين، على إبراز انفصاله عن الآخرين. <span class="c">[3]</span></p>
+<p>ويتحقق الاتزان بتوزيع الأوزان البصرية، والسيادة بإبراز مركز الاهتمام، والإيقاع بالتكرار المنظم. وتشير النسبة إلى علاقات الأحجام، والوحدة إلى ترابط الأجزاء. وتساعد هذه المبادئ المصمم على توجيه انتباه الجمهور نحو الفعل المهم بدلًا من تشتيته بين تفاصيل متنافسة. <span class="c">[4]</span></p>
+<p>وفي السينوغرافيا تشارك المناظر والأزياء والإضاءة والأدوات والصوت وحركة الممثل في بناء المشهد. وقد يكون التمثيل محاكاتيًا يشبه الواقع، أو تجريديًا يختزل الأشكال، أو رمزيًا يحيل إلى أفكار. ويمكن أن تجتمع هذه المعالجات في عرض واحد. <span class="c">[5]</span></p>
+</section>
+
+<section class="rv">
+<h2>ثالثًا: الإشارة والرمز والأيقونة</h2>
+<p>كلمة «الإشارة» قد تعني العلامة عمومًا، لكن المقصود بها في هذه المقارنة هو «المؤشر» أو «الإشارة المؤشرية» عند بيرس. <span class="c">[1، 2]</span></p>
+<div class="tri3">
+
+<article class="sign">
+<header><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="24" r="16"/><path d="M32 40V58M32 50L24 44M32 48L40 42"/></svg><div><p class="k">تدل بالشبه</p><h3>١ الأيقونة</h3></div></header>
+<p>علامة تدل على موضوعها عن طريق التشابه، مثل رسم شجرة أو مجسم منزل. وقد يكون الشبه في الشكل أو الصوت أو العلاقات، ولا يشترط التطابق الكامل. <span class="c">[1]</span></p>
+<p>خصائصها: تقوم على الشبه، ويمكن أن تختزل التفاصيل، ولا يلزم وجود الشيء الممثل أمامنا. ومثالها في السينوغرافيا: واجهة مصنوعة من الخشب الخفيف تشبه واجهة بيت حجري، فتؤدي وظيفة أيقونية رغم اختلاف الخامة.</p>
+<p>وقد تكفي نافذة وباب وبعض الخطوط المعمارية للإيحاء بالبيت دون تنفيذ جميع تفاصيله. كما أن خريطة المكان قد تمثله أيقونيًا بحفظ علاقات أجزائه، رغم اختلافها عن مظهره الحقيقي. لذلك لا تقتصر الأيقونة على المحاكاة الواقعية الدقيقة. <span class="c">[1]</span></p>
+</article>
+
+<article class="sign">
+<header><svg viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="22" cy="40" rx="6" ry="10"/><ellipse cx="42" cy="22" rx="6" ry="10"/><path d="M22 56v2M42 38v2M14 52v2" /></svg><div><p class="k">يدل بالاتصال الفعلي</p><h3>٢ الإشارة المؤشرية أو المؤشر</h3></div></header>
+<p>علامة ترتبط بموضوعها اتصالًا فعليًا، كالأثر بسببه؛ فآثار الأقدام الناتجة عن المشي تدل على المرور، والدخان الناتج عن الاحتراق يدل عليه. <span class="c">[2]</span></p>
+<p>خصائصها: تعتمد على اتصال فعلي، ولا يشترط أن تشبه موضوعها، وقد تظهر دون قصد إرسال رسالة. ومثالها المسرحي: آثار مبتلة يتركها الممثل فعلًا على الأرض. أما الآثار المرسومة مسبقًا فهي تمثل أثرًا متخيلًا، ولا تثبت مرور شخص حقيقي.</p>
+<p>كذلك يدل الدخان الصناعي على تشغيل الجهاز الذي ينتجه، لكنه لا يثبت وجود حريق حقيقي على المسرح. وقد يستخدمه العرض لتمثيل حريق داخل الحكاية. ولهذا يجب التمييز بين المؤشر الفعلي وبين محاكاة المؤشر في العالم الدرامي.</p>
+</article>
+
+<article class="sign">
+<header><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 46L8 18L22 30L32 12L42 30L56 18L54 46Z"/><path d="M10 54H54"/></svg><div><p class="k">يدل بالعرف والقاعدة</p><h3>٣ الرمز</h3></div></header>
+<p>علامة تعتمد علاقتها بمعناها على عرف أو قاعدة أو عادة مكتسبة، مثل الكلمات والأعلام. ويحتاج فهمها إلى معرفة ثقافية أو اصطلاحية. <span class="c">[1، 2]</span></p>
+<p>خصائصه: يعتمد على التعلم، وقد يختلف معناه باختلاف الثقافة والسياق، ويمكن أن يدل على فكرة مجردة. ومثاله في السينوغرافيا: تاج يحيل إلى الملكية أو السلطة. ولا يلزم أن يحمل اللون أو الشيء المعنى نفسه في جميع العروض.</p>
+<p>فاللون الأحمر قد يرتبط بالخطر أو الحب أو الاحتفال تبعًا للمشهد والمعرفة الثقافية. وإذا كرر العرض ارتباط لون بشخصية أو فكرة، فقد يبني علاقة رمزية خاصة به يتعلمها الجمهور خلال المشاهدة. وينبغي دعم هذا التأويل بما يحدث فعلًا في العرض.</p>
+</article>
+</div>
+<p style="margin-top:1.2rem">وتفيد هذه الأنواع المصمم في تحديد كيفية توصيل فكرته: هل يحتاج إلى شكل يمكن التعرف عليه، أم أثر يستدل منه المشاهد على حدث، أم رمز يستحضر معرفة مشتركة؟ وقد يجمع بينها لتوضيح العلاقات داخل المشهد.</p>
+</section>
+
+<section class="rv">
+<h2>رابعًا: المقارنة والتطبيق</h2>
+<div class="cmp"><div><b>الأيقونة</b>الشبه</div><div><b>المؤشر</b>الاتصال الفعلي</div><div><b>الرمز</b>العرف أو القاعدة</div></div>
+<p>أساس الدلالة: الأيقونة تدل بالشبه، والمؤشر بالاتصال الفعلي، والرمز بالعرف أو القاعدة. ففي مثال الشجرة: رسمها أيقونة، وأثر احتراقها مؤشر على الاحتراق، وكلمة «شجرة» رمز لغوي. <span class="c">[1، 2]</span></p>
+<p>من حيث الفهم، نتعرف على الأيقونة بملاحظة الشبه، ونستدل بالمؤشر من الأثر على ما ارتبط به، ونفهم الرمز بمعرفة الاصطلاح. ومن حيث التشابه، فهو أساس الأيقونة، لكنه غير لازم للمؤشر والرمز. ولا يعني ذلك أن فهم الأيقونة والمؤشر يخلو من الخبرة والتعلم. <span class="c">[1، 2]</span></p>
+<p>وقد يجمع العنصر الواحد أكثر من علاقة: فالتاج المسرحي قد يشبه تاجًا حقيقيًا، فيكون أيقونيًا من هذه الجهة، ويرمز إلى الملكية من جهة أخرى. ويتحدد التحليل بالعلاقة المقصودة والسياق. <span class="c">[2]</span></p>
+<p>تطبيق مقترح: في مشهد عن غياب حاكم، تحاكي خلفية مرسومة قاعة قصر فتعمل أيقونيًا، ويترك الممثل آثارًا مبتلة فتكون مؤشرات على مروره، ويوضع تاج على مقعد فارغ فيحيل رمزيًا إلى الملكية. ويقوى معنى غياب الحاكم بالحوار والأداء؛ فالمقعد الفارغ وحده لا يثبت هذا التفسير.</p>
+
+<div class="stage">
+<svg viewBox="0 0 640 260" role="group" aria-label="مشهد غياب الحاكم، اضغطي على عناصره">
+<rect width="640" height="190" fill="#3a1b27"/><rect y="190" width="640" height="70" fill="#120a0e"/>
+<g class="hs" tabindex="0" role="button" aria-label="الخلفية المرسومة" data-k="icon" fill="none" stroke="#d2a85a" stroke-width="2.5">
+<path d="M70 190V60Q70 30 100 30T130 60V190M510 190V60Q510 30 540 30T570 60V190"/><path d="M200 190V90Q200 40 320 40T440 90V190Z"/><path d="M240 190V100Q240 70 320 70T400 100V190" opacity=".5"/></g>
+<g class="hs" tabindex="0" role="button" aria-label="الآثار المبتلة" data-k="index" fill="#7fb4d6" stroke="#7fb4d6" stroke-width="1.5">
+<ellipse cx="90" cy="236" rx="9" ry="5"/><ellipse cx="150" cy="224" rx="9" ry="5"/><ellipse cx="210" cy="236" rx="9" ry="5"/><ellipse cx="270" cy="224" rx="9" ry="5"/></g>
+<g class="hs" tabindex="0" role="button" aria-label="المقعد والتاج" data-k="symbol" fill="none" stroke="#d2a85a" stroke-width="2.5" stroke-linejoin="round">
+<path d="M290 232V150H350V232M284 188H356V200H284Z"/><path d="M300 176L298 154L309 162L320 148L331 162L342 154L340 176Z" fill="#d2a85a55"/></g>
+</svg>
+<p id="cap" class="tip">اضغطي على الخلفية أو الآثار أو التاج لتري نوع العلامة.</p>
+</div>
+
+<p style="margin-top:1.4rem">وتستطيع إضاءة مركزة على التاج أن تمنحه السيادة البصرية، بينما توجه حركة الممثل النظر نحوه. وإذا حاول ارتداءه، فقد يتحول المشهد من انتظار الحاكم إلى صراع على الحكم. وهكذا تتغير دلالة التكوين بتغير الفعل وعلاقات العناصر.</p>
+</section>
+
+<section class="rv">
+<h2>خاتمة</h2>
+<p>تساعد السيميوطيقا المصمم على اختيار عناصر المشهد وفهم دلالاتها. وتنتج القراءة المقنعة من وصف العنصر، وتحديد ما يحيل إليه وأساس علاقته به، ثم ربطه بالفعل المسرحي وسائر عناصر العرض. وبذلك يصبح التكوين وسيلة للتعبير وبناء المعنى، مع تجنب افتراض معنى ثابت لكل لون أو شكل.</p>
+</section>
+
+<section class="rv">
+<h2>المراجع</h2>
+<ol>
+<li>[1] دانيال تشاندلر، السيميائيات للمبتدئين، فصل العلامات، نسخة مستضافة على موقع جامعة برنستون. <a href="https://www.cs.princeton.edu/~chazelle/courses/BIB/semio2.htm" target="_blank" rel="noopener">رابط المصدر</a></li>
+<li>[2] ألبرت أتكين، نظرية بيرس في العلامات، موسوعة ستانفورد للفلسفة، مراجعة 2022. <a href="https://plato.stanford.edu/entries/peirce-semiotics/" target="_blank" rel="noopener">رابط المصدر</a></li>
+<li>[3] متحف جيتي، عناصر الفن، 2011، ملف تعليمي. <a href="https://www.getty.edu/education/teachers/building_lessons/elements_art.pdf" target="_blank" rel="noopener">رابط المصدر</a></li>
+<li>[4] متحف جيتي، مبادئ التصميم، 2011، ملف تعليمي. <a href="https://www.getty.edu/education/teachers/building_lessons/principles_design.pdf" target="_blank" rel="noopener">رابط المصدر</a></li>
+<li>[5] نسيمة بغدادي، دينامية العلامة في العرض المسرحي من ما وراء النص إلى ما خلف الستار، حوليات الآداب واللغات، 2017، منصة ASJP. <a href="https://asjp.cerist.dz/en/article/100517" target="_blank" rel="noopener">رابط المصدر</a></li>
+</ol>
+</section>
+</main>
+
+<script>
+(function(){
+var h=document.getElementById('hero');
+h.addEventListener('pointermove',function(e){var r=h.getBoundingClientRect();h.style.setProperty('--x',(e.clientX-r.left)+'px');h.style.setProperty('--y',(e.clientY-r.top)+'px')});
+var T={icon:'أيقونة: الخلفية المرسومة تحاكي قاعة قصر، فهي تدل بالشبه.',index:'مؤشر: الآثار المبتلة تركها الممثل فعلًا، فهي تدل على مروره بالاتصال الفعلي.',symbol:'رمز: التاج على المقعد الفارغ يحيل إلى الملكية بحكم العرف، ويقوى المعنى بالحوار والأداء.'};
+var cap=document.getElementById('cap'),hs=document.querySelectorAll('.hs');
+function pick(g){hs.forEach(function(x){x.classList.remove('on')});g.classList.add('on');cap.className='';cap.textContent=T[g.dataset.k]}
+hs.forEach(function(g){g.addEventListener('click',function(){pick(g)});g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(g)}})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(s){io.observe(s)});
+})();
+</script>
+</body>
+</html>
